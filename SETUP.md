@@ -14,6 +14,6 @@ Before trying these examples make sure to setup you enviroment correctly
 
 
 ## Examples
-- [BeanStalk Simple Example](beanstalk-java-jetty-maven-example/README.md)
+- [BeanStalk Java Jetty Maven Example](beanstalk-java-jetty-maven-example/README.md)
 
 

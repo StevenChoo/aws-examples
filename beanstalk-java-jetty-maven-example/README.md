@@ -37,4 +37,13 @@ It uses the [BeanStalk Maven Plugin](http://beanstalker.ingenieux.com.br/beansta
     mvn -Ps3-deploy package deploy
     ```
 
-### Undeploy
+5. check output for beanstalk cname
+
+The maven config is used for defined the CNAME url for the BeanStalk deployment
+e.g. ```${beanstalk.cnamePrefix}.${beanstalker.region}.elasticbeanstalk.com```
+
+### Terminate deployment
+
+```bash
+mvn beanstalk:terminate-environment
+```
