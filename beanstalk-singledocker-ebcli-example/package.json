@@ -1,0 +1,13 @@
+{
+	"name": "beanstalk-singledocker-ebcli-example",
+	"version": "1.0.0",
+	"description": "beanstalk-singledocker-ebcli-example on Docker",
+	"author": "Steven Choo",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"express": "^4.16.1"
+	}
+}
