@@ -1,0 +1,4 @@
+target
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/
