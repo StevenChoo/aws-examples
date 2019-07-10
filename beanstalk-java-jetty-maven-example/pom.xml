@@ -37,7 +37,7 @@
         <beanstalk.s3Key>${project.artifactId}/${project.artifactId}-${project.version}-${beanstalk.versionLabel}.zip</beanstalk.s3Key>
         <beanstalk.solutionStack>64bit Amazon Linux * running Java 7</beanstalk.solutionStack>
         <beanstalk.environmentType>SingleInstance</beanstalk.environmentType>
-        <beanstalk.instanceType>t3.nano</beanstalk.instanceType>
+        <beanstalk.instanceType>t2.micro</beanstalk.instanceType>
 
         <!--
         <beanstalk.keyName>your-ec2-key</beanstalk.keyName>
