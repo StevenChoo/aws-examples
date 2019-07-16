@@ -4,7 +4,7 @@ Project containing AWS examples of AWS service usage
 
 ## Prerequisites
 
-- [AWS CLI](SETUP.md#AWS CLI)
+- wip
 
 ## Examples
 - [BeanStalk Java Jetty Maven Example](beanstalk-microprofile-thorntail-ebcli-example/README.md)
