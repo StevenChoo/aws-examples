@@ -1,0 +1,9 @@
+.gradle/*
+build/*
+*.DS_Store
+# Elastic Beanstalk Files
+.elasticbeanstalk/
+*.zip
+*.sh
+!bin/*.sh
+lib

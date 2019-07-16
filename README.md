@@ -7,6 +7,8 @@ Project containing AWS examples of AWS service usage
 - [AWS CLI](SETUP.md#AWS CLI)
 
 ## Examples
-- [BeanStalk Java Jetty Maven Example](beanstalk-java-jetty-maven-example/README.md)
-
+- [BeanStalk Java Jetty Maven Example](beanstalk-microprofile-thorntail-ebcli-example/README.md)
+- [BeanStalk MicroProfile Thorntail Example](beanstalk-microprofile-thorntail-ebcli-example/README.md)
+- [BeanStalk Single Docker Example](beanstalk-singledocker-ebcli-example/README.md)
+- [BeanStalk AWS provided Xray Example](beanstalk-aws-provided-xray-example/README.md)
 
