@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: ""
+Resources:
+  DummyServer:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      # Most common Linux AMI - Amazon Linux 2 AMI (HVM), SSD Volume Type
+      ImageId: "ami-0bbc25e23a7640b9b"
+      InstanceType: "t2.micro"
+      #Tags:
+      #  -
+      #    Key: "Name"
+      #    Value: "simple-ec2-cloudformation-template-instance"
