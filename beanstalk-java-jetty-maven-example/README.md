@@ -29,8 +29,15 @@ It uses the [BeanStalk Maven Plugin](http://beanstalker.ingenieux.com.br/beansta
     <artifactId>Your maven artifactId</artifactId>
     ```
 3. update AWS settings in pom.xml. For all options check the Maven plugin info page, [Options](http://beanstalker.ingenieux.com.br/beanstalk-maven-plugin/plugin-info.html)
+    
     ```xml
     <beanstalker.region>Your AWS region</beanstalker.region>
+    ```
+    
+    and
+    
+    ```xml
+    <beanstalk.keyName>default</beanstalk.keyName>
     ```
 4. run
     ```bash
@@ -42,8 +49,22 @@ It uses the [BeanStalk Maven Plugin](http://beanstalker.ingenieux.com.br/beansta
 The maven config is used for defined the CNAME url for the BeanStalk deployment
 e.g. ```${beanstalk.cnamePrefix}.${beanstalker.region}.elasticbeanstalk.com```
 
+### Update beanstalk configuration
+When changing e.g. Java runtime from 1.7 to 1.8 run an environment update
+```bash
+mvn beanstalk:update-environment
+```
+
 ### Terminate deployment
 
 ```bash
 mvn beanstalk:terminate-environment
+```
+
+### Remove application
+Using the AWS CLI
+
+```bash
+aws elasticbeanstalk delete-application \ 
+--application-name beanstalk-java-jetty-maven 
 ```

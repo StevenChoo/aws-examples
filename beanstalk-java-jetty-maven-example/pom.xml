@@ -12,11 +12,11 @@
 
     <properties>
         <!-- You can use a later version if you are are using Java 8 -->
-        <jettyVersion>9.2.0.RC0</jettyVersion>
+        <jettyVersion>9.4.19.v20190610</jettyVersion>
         <mainApplication>com.choo.test.Application</mainApplication>
 
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
 
         <environmentName>${project.artifactId}</environmentName>
 
@@ -35,12 +35,13 @@
         <beanstalk.s3Bucket>${project.groupId}</beanstalk.s3Bucket>
         -->
         <beanstalk.s3Key>${project.artifactId}/${project.artifactId}-${project.version}-${beanstalk.versionLabel}.zip</beanstalk.s3Key>
-        <beanstalk.solutionStack>64bit Amazon Linux * running Java 7</beanstalk.solutionStack>
+        <beanstalk.solutionStack>64bit Amazon Linux * running Java 8</beanstalk.solutionStack>
         <beanstalk.environmentType>SingleInstance</beanstalk.environmentType>
         <beanstalk.instanceType>t2.micro</beanstalk.instanceType>
 
+        <beanstalk.keyName>default</beanstalk.keyName>
+
         <!--
-        <beanstalk.keyName>your-ec2-key</beanstalk.keyName>
         <beanstalk.iamInstanceProfile>aws-elasticbeanstalk-ec2-role</beanstalk.iamInstanceProfile>
         <beanstalk.availabilityZones>us-east-1d</beanstalk.availabilityZones>
         <beanstalk.blockDeviceMappings>/dev/sdb=ephemeral0</beanstalk.blockDeviceMappings>
