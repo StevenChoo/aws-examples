@@ -12,7 +12,7 @@
 
     <properties>
         <!-- You can use a later version if you are are using Java 8 -->
-        <jettyVersion>9.4.19.v20190610</jettyVersion>
+        <jettyVersion>9.4.41.v20210516</jettyVersion>
         <mainApplication>com.choo.test.Application</mainApplication>
 
         <maven.compiler.source>1.8</maven.compiler.source>
